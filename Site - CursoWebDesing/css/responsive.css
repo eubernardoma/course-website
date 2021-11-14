@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+
+.box-icone-single{ width: 100%;}
+.equipe-container{width: 100%;}
+.sobre-container{width: 100%; margin-top: 60px;}
+.card-single{width: 100%;}
+footer.footer1{text-align: center;}
+.navbar-nav li{padding: 8px 0; border-bottom: 1px solid black;}
+.navbar-nav ul{top: 30px; left: 0;}
+}
+
+@media screen and (max-width: 500px) {
+    .card-single{padding: 10px;}
+}

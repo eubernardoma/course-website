@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Root */
+:root{
+    --title-color: #52aaa7;
+    --text-color: white;
+}
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Classes auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    float: left;
+    width: 33.33%;
+}
+
+.center{text-align: center;}
+
+.clear{clear: both;}
+
+/* Header */
+
+.navbar-nav a:hover{text-decoration: underline;}
+
+.active{font-weight: normal; text-decoration: underline;}
+
+.navbar-brand{font-weight: normal; font-size: 23px;}
+
+/*Classes do site
+
+/* Header 
+header{
+    padding: 8px 0;
+}
+
+.logo{
+    float: left;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+
+nav.menu-desktop li.selected{
+    font-weight: normal; 
+    text-decoration: underline;
+}
+
+nav.menu-desktop li{
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover{text-decoration: underline;}
+*/
+
+/* Section Main */
+
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 140px 0 200px 0;
+    background-image: url('../img/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+section.main-bg .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+}
+
+section.main-bg h2{
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: normal;
+}
+
+section.main-bg p{
+    text-align: left;
+    color: var(--text-color);
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+/* Section Diferenciais */
+
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+}
+
+.line-text div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 3px;
+    background: var(--title-color);
+}
+
+.line-text h2{
+    color: var(--title-color);
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais{
+    margin-top: 35px
+}
+
+.box-icone-single{
+    float: left;
+}
+
+.box-icone-single{ 
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.box-icone-single h2{ 
+    color: #8a6b62;
+    font-size: 40px;
+}
+
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/* Section Sobre */
+
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.sobre-equipe > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe.container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    margin-top: 15px;
+}
+
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-color: gray;
+}
+
+.descricao-avatar{
+    padding: 0 10px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p{
+    color: rgb(30, 30, 30);
+    font-weight: lighter;
+}
+
+/* Inscricao */
+
+section.inscricao{
+    background: var(--title-color);
+    padding: 20px 0;
+}
+
+h2.inscricao-texto{
+    font-weight: normal;
+    color: white;
+}
+
+.inscricao-form input[type=email]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: var(--text-color);
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: #1d6c64;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Cards */
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+}
+
+.card-single img{
+    width: 100%;
+}
+
+.card-single h3{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Footer 1 */
+
+footer.footer1{
+    background: var(--title-color);
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+footer.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+footer.footer1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+footer.footer1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+div.group-icons a{
+    display: inline-block;
+    margin: 15 10px;
+}
+
+/* Footer2 */
+footer.footer2{
+    padding: 15px 0;
+    background: #237a70; 
+    text-align: center; 
+    color: white;
+}
